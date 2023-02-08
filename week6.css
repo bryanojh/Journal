@@ -16,7 +16,7 @@
   margin: 10px;
 }
 
-.mystyle1{
+.mystyle{
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -25,7 +25,7 @@
   margin: 10px;
 }
 
-.mystyle2{
+.mystyle{
   display: inline-block;
   padding: 50px;
   text-align: left;
@@ -37,7 +37,7 @@
   margin: 10px;
 }
 
-.mystyle3{
+.mystyle{
   display: inline-block;
   padding: 50px;
   text-align: left;

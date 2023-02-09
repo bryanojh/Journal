@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Developmental Blog</title>
-  <link href="week6.css" rel="stylesheet" type="text/css" />
+  <link href="week8.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <h1>Week 7</h1>
+  <h1>Week 8</h1>
   	<nav style="background-color: #FFFFFF">
 		<a style="color: #000000" href="index.html">Homepage</a>
 		<a style="color: #000000" href="Week1.html">Week 1</a>
@@ -24,7 +24,60 @@
 		<a style="color: #000000" href="Week14.html">Week 14</a>
 	</nav>
   <p style="font-family: serif;font-size:20px">
-    These are the things I've learnt in <b>Week 7!</b>
+    These are the things I've learnt in <b>Week 8!</b>
   </p>
-  <p>In this week, I have learned about </p>
+  <p>In this week, I have learned about jQuery & API</p>
+  <p class='help' id='msg'>Help Me!</p>
+  <button id='change'>Change Text</button>
+
+  <div class="circle" id="red-circle"></div>
+  <div class="circle" id="blue-circle"></div>
+  <div class="circle" id="yellow-circle"></div>
+
+<h1>Simple PSI Data Info</h1>
+<table id='psi-data'>
+  <tr>
+    <th>
+      PSI 24hr
+    </th>
+    <th>
+      PM10 24hr
+    </th>
+  </tr>
+  <tr>
+    <td id="psi-twenty-four-hourly">
+      Empty
+    </td>
+    <td id="pm10-twenty-four-hourly">
+      Empty
+    </td>
+  </tr>
+</table>
+<br />
+<input type='text' id='txtDate' placeholder='Place your date time values' style='font-size: 0.8em;width:200px;'><br />
+<small style='font-size:0.5em;color:#333;'>Try Entering Date & Time in this Format:
+  2020-08-21T00:00:00</small><br /><br />
+<button id='btnSubmit'>Submit</button>
+
+<h1 class="title"> Random User Generator</h1>
+<div class="user-profile">
+    <img id="avatar" src="https://pbs.twimg.com/profile_images/743138182607175680/ZJzktgBk_400x400.jpg" />
+    <div id="fullname">Jon Snow</div>
+    <div id="username">
+      kingofnorth
+    </div>
+  <div class="description">
+  <div>Email: <span id="email">jon@hotmail.com</span></div>
+  <div>City: <span id="city">Winterfell</span></div>
+  </div>
+  <div class="footer">
+      <button id="btn">Next User!</button>
+  </div>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="week8.js"></script>
+</body>
+</html>
 

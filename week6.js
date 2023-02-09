@@ -12,19 +12,21 @@ button.addEventListener("click", function() {
     isEveGoing && !isTuesday &&
     !isJaniceGoing
   ) {
-    //changing background color of the html element via javascript through html dom method.
     document.getElementById("Going").style.backgroundColor = "green";
 
   } else {
-    //changing background color of the html element via javascript through html dom method.
     document.getElementById("notGoing").style.backgroundColor = "green";
   }
 });
 
+for (let i = 10; i >= 0; i--) {
+  if ((i % 2 == 0) && (i !== 0)) {
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("even")
     let newContent = document.createTextNode("" + i + "(even)");
     newDiv.appendChild(newContent);
     document.body.appendChild(newDiv);
-  } else {
+  }else {
     let newDiv = document.createElement("div");
     newDiv.classList.add("odd")
     let newContent = document.createTextNode("" + i);
@@ -33,7 +35,6 @@ button.addEventListener("click", function() {
   }
 }
 
-//Create momobae literal object here.
 let momobae = {
   name: "Momobae",
   specialty: "K-Pop",
@@ -43,12 +44,11 @@ let momobae = {
   gender: "Female"
 }
 
-let newDiv = document.createElement("div");
-newDiv.classList.add("mystyle")
-newDiv.innerHTML = "Name: " + momobae.name + "<br>Specialty: " + momobae.specialty + "<br>Power: " + momobae.power + "<br>Hitpoints: " + momobae.hitpoints + "<br>Level: " + momobae.level + "<br>Gender: " + momobae.gender;
-document.body.appendChild(newDiv);
+let newDiv1 = document.createElement("div");
+newDiv1.classList.add("mystyle")
+newDiv1.innerHTML = "Name: " + momobae.name + "<br>Specialty: " + momobae.specialty + "<br>Power: " + momobae.power + "<br>Hitpoints: " + momobae.hitpoints + "<br>Level: " + momobae.level + "<br>Gender: " + momobae.gender;
+document.body.appendChild(newDiv1);
 
-//Fill in the ??? to complete the function object.
 function Singer(name, specialty, power, hitpoints, level, gender ){
   this.name = name;
   this.specialty = specialty;
@@ -69,19 +69,17 @@ function Singer(name, specialty, power, hitpoints, level, gender ){
 };
 };
 
-let momobae = new Singer("Momobae", "K-Pop", 49, 28, 7, "Female");
-
 let minabae = new Singer("Minabae", "K-Pop", 50, 29, 8, "Female");
-
-let newDiv1 = document.createElement("div");
-newDiv1.classList.add("mystyle")
-newDiv1.innerHTML = "Momobae's Singer Profile: <br>" +momobae.singerProfile();
-document.body.appendChild(newDiv1);
 
 let newDiv2 = document.createElement("div");
 newDiv2.classList.add("mystyle")
-newDiv2.innerHTML = "Minabae's Singer Profile: <br>" +minabae.singerProfile();
+newDiv2.innerHTML = "Momobae's Singer Profile: <br>" +momobae.singerProfile();
 document.body.appendChild(newDiv2);
+
+let newDiv3 = document.createElement("div");
+newDiv3.classList.add("mystyle")
+newDiv3.innerHTML = "Minabae's Singer Profile: <br>" +minabae.singerProfile();
+document.body.appendChild(newDiv3);
 
 let el = document.querySelectorAll("li.hot");
 
